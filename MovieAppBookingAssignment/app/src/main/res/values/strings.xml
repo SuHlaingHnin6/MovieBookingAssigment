@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MovieAppBookingAssignment</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_forgetpassword">Forget Password?</string>
+    <string name="lbl_hintEmail">LyliJohnson@gmail.com</string>
+    <string name="lbl_hintPassword">***********</string>
+    <string name="lbl_signin_with_facebook">Sign in With FaceBook</string>
+    <string name="lbl_signin_with_google">Sign in With Google</string>
+    <string name="Lbl_login_comfirm">Confirm</string>
+    <string name="lbl_phone">Phone</string>
+    <string name="lbl_hint_phone">09 *********</string>
+    <string name="lbl_aquacman">Aqua Man</string>
+    <string name="lbl_movie_action">Action/Sci-fi-3h 2m</string>
+    <string name="lbl_nowShowing">Now Showing</string>
+    <string name="lbl_comming_soon">Comming Soon</string>
+    <string name="lbl_profile_name">Hi Lily!</string>
+    <string name="default_titile_movie_list_view_pod">Title Movie List View Pod</string>
+    <string name="lbl_summery">Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land.Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land</string>
+
+    <string name="drawer_open">DrawerOpen</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="lbl_default_Titli_time">Available in</string>
+    <string name="lbl_golden_city">Glaxy Cinema - Golden City</string>
+    <string name="lbl_detective">Detective Pikachu</string>
+    <string name="lbl_wed">Wednesday,10May,07:00 PM</string>
+    <string name="lbl_speed">1MDb 6.6</string>
+    <string name="aquac_man_summery">Aquac Man Summery</string>
+    <string name="lbl_actor_title">Cast</string>
+    <string name="lbl_button_ticket">Get Your Ticket</string>
+    <string name="lbl_welcome">Hello! Welcome to Galaxy App.</string>
+    <string name="lbl_getstarted">Get Started</string>
+    <string name="lbl_name">Lily Johnson</string>
+    <string name="lbl_gmail_name">lilyjohnson@gmail.com</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_promotion_code">Promotion Code</string>
+    <string name="lbl_select_language">Select Language</string>
+    <string name="lbl_tearm_service">Tearm Of Service</string>
+    <string name="lbl_rate">Rates Us</string>
+    <string name="lbl_logout">LogOut</string>
+    <string name="lbl_sign_name">Name</string>
+    <string name="lbl_dot">---------------------------------------------------------------------------------------</string>
+    <string name="lbl_payment">15$</string>
+    <string name="lbl_dotted_line">-------------------------------------------------------------</string>
+</resources>

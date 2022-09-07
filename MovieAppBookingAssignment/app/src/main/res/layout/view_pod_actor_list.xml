@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.suhlaing.movieappbookingassignment.viewpod.ActorListViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBestActor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingEnd="@dimen/margin_medium"/>
+
+</com.padcmyanmar.suhlaing.movieappbookingassignment.viewpod.ActorListViewPod>

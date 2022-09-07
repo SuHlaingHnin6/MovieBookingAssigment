@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/tvGener"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/background_gener_chip"
+            android:gravity="center"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:text="Adventure"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/tvGenerTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_xxlarge"
+            android:layout_marginStart="@dimen/margin_medium_3"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/background_gener_chip"
+            android:gravity="center"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium"
+            android:text="Adventure"
+            android:textColor="@color/black" />
+    </com.google.android.material.chip.ChipGroup>
+
+
+</RelativeLayout>

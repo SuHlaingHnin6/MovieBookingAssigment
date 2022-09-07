@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@color/colorBackGround">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/colorBackGround"
+        app:srcCompat="@drawable/movie1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_3x"
+        android:layout_below="@+id/ivWelcome"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:padding="@dimen/margin_medium"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_welcome"
+        android:textColor="#A4AFC7"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/margin_medium"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:text="@string/lbl_getstarted"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/margin_card_medium_2"
+        android:layout_marginRight="@dimen/margin_card_medium_2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_xxlarge"/>
+
+</RelativeLayout>

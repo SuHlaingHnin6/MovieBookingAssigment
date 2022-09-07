@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSignName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_sign_name"
+        android:textColor="@color/color_text"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/height_email"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtSignName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSignName"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:hint="@string/lbl_sign_name"
+        android:inputType="text"
+        android:textColorHint="@color/color_text" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_phone"
+        android:textColor="@color/color_text"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_below="@id/edtSignName"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPhone"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:hint="@string/lbl_hint_phone"
+        android:inputType="phone"
+        android:textColorHint="@color/color_text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvEamil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_email"
+        android:textColor="@color/color_text"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_below="@id/edtPhone"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEamil"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:hint="@string/lbl_hintEmail"
+        android:textColorHint="@color/color_text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_password"
+        android:textColor="@color/color_text"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_below="@id/edtEmail"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_hintPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/color_text"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_below="@+id/tvPassword"
+        android:inputType="textPassword"
+        />
+
+
+    <include
+        android:id="@+id/vploginButton2"
+        layout="@layout/login_view_pod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword" />
+
+
+</RelativeLayout>

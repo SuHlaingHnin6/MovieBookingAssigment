@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvcomboset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo Set M"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_marginTop="@dimen/margin_medium_2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvpayment"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="220dp"
+        android:layout_toEndOf="@id/tvcomboset"
+        android:text="@string/lbl_payment"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_regular_2x"
+        android:layout_marginTop="@dimen/margin_medium_2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/combosize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo size M 22oz.Coke(x1) \n and medium popcorn(x1)"
+        android:layout_below="@id/tvcomboset"
+        android:layout_marginTop="@dimen/margin_medium"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvpayment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/margin_medium_3"
+            android:layout_height="@dimen/margin_medium_3"
+            android:text="-"
+            android:background="@drawable/background_comboset"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/margin_medium_3"
+            android:layout_height="@dimen/margin_medium_3"
+            android:text="0"
+            android:background="@drawable/background_comboset"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="@dimen/margin_medium_3"
+            android:layout_height="@dimen/margin_medium_3"
+            android:text="+"
+            android:background="@drawable/background_comboset"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</RelativeLayout>

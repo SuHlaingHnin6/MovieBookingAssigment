@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.suhlaing.movieappbookingassignment.viewpod.ViewPodLogin xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSigninFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_signin_with_facebook"
+        android:textColor="@color/color_text"
+        android:layout_margin="@dimen/margin_medium"
+        android:background="@drawable/loginshape"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:paddingStart="@dimen/margin_xxlarge"
+        android:paddingEnd="@dimen/margin_xxlarge" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSigninGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSigninFacebook"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:background="@drawable/loginshape"
+        android:drawableStart="@drawable/ic_google"
+        android:paddingStart="@dimen/margin_xxlarge"
+        android:paddingEnd="@dimen/margin_xxlarge"
+        android:text="@string/lbl_signin_with_google"
+        android:textColor="@color/color_text" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLoginComfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lbl_login_comfirm"
+        android:textColor="@color/color_text"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_below="@id/btnSigninGoogle"
+        android:background="@drawable/loginshape"
+        android:backgroundTint="@color/colorBackGround"
+
+        />
+
+
+</com.padcmyanmar.suhlaing.movieappbookingassignment.viewpod.ViewPodLogin>

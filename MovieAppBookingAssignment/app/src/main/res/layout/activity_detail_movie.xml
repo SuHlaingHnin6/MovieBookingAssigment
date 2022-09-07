@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.MovieDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/cardview_light_background"
+            app:collapsedTitleTextColor="@color/white"
+            app:expandedTitleTextColor="@android:color/transparent">
+
+
+
+                <ImageView
+                    android:id="@+id/ivdetailMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/aqucmandetail"
+                    android:scaleType="centerCrop" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPlayButton"
+                android:layout_width="@dimen/width_play_button"
+                android:layout_height="@dimen/height_play_button"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_play_circle_outline_white_24dp"/>
+
+
+            <FrameLayout
+                android:id="@+id/btnback"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_white_24dp"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:layout_marginStart="@dimen/margin_medium"/>
+
+            </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:layout_gravity="bottom"
+                        android:background="@drawable/background_detail_movie_corner"/>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detective Pikachu"
+                    android:textSize="@dimen/text_heading_1x"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/margin_medium_3"
+                    android:textColor="@color/black"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMovieTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1h 45m"
+                    android:layout_marginStart="@dimen/margin_medium_3"
+                    android:layout_below="@+id/tvTitle"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:layout_marginTop="@dimen/margin_medium"/>
+
+                <RatingBar
+                    android:id="@+id/rbMovieVote"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTitle"
+                    android:layout_marginStart="-90dp"
+                    android:layout_marginTop="@dimen/margin_card_medium_2_n"
+                    android:layout_toEndOf="@id/tvTitle"
+                    android:numStars="5"
+                    android:progressTint="#FFC107"
+                    android:rating="3.5"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_speed"
+                    android:layout_below="@id/tvTitle"
+                    android:textSize="@dimen/text_regular_3x"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_toEndOf="@id/rbMovieVote"
+                    android:layout_marginStart="@dimen/margin_xlarge"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvchip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMovieTime" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitleSummery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/rvchip"
+                    android:layout_marginStart="@dimen/margin_medium_3"
+                    android:text="@string/aquac_man_summery"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_regular_3x"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvsummery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_medium_3"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginEnd="@dimen/margin_medium"
+                    android:layout_below="@id/tvTitleSummery"
+                    android:text="@string/lbl_summery"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvsummery"
+                android:layout_marginStart="@dimen/margin_medium_3"
+                android:text="@string/lbl_actor_title"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_regular_3x"/>
+
+                <include
+                    android:id="@+id/includeActor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tvCast"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    layout="@layout/view_pod_actor_list"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@id/includeActor"/>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_button_ticket"
+        android:background="@drawable/loginshape"
+        android:backgroundTint="@color/colorBackGround"
+        android:layout_marginStart="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium_3"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/margin_medium_3"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

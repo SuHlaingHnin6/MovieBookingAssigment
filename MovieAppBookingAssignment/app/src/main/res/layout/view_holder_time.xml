@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_large"
+    android:layout_marginTop="@dimen/margin_medium_3"
+    android:paddingStart="@dimen/margin_medium"
+    android:paddingEnd="@dimen/margin_medium"
+    android:background="@drawable/background_time_stoke"
+    android:paddingTop="@dimen/margin_medium"
+    android:paddingBottom="@dimen/margin_medium">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNumberTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2:00PM"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_regular_3x"/>
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="pm"-->
+<!--        android:layout_toEndOf="@+id/tvNumberTime"-->
+<!--        android:layout_marginStart="3dp"-->
+<!--        android:layout_marginTop="3dp"/>-->
+
+
+</RelativeLayout>
